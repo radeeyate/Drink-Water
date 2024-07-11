@@ -12,7 +12,7 @@ func main() {
 	s, _ := gocron.NewScheduler()
 
 	j, _ := s.NewJob(
-		gocron.DurationJob(1*time.Second),
+		gocron.DurationJob(1*time.Second), // temporary
 		gocron.NewTask(func() { notify() }),
 	)
 
